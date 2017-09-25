@@ -1,0 +1,8 @@
+GEOMETRY	TYPE	MATERIAL
+NULL		AIR	NULL
+cast.stl	CAST	AISI1010.SZG.dat
+sandmold.stl	MOLD	Ê÷Ö¬É°£¨Öý¸Ö£©.SFC.dat
+feeder.stl	FEEDER	NULL
+gating.stl	RUNNER	NULL
+ingate.stl	RUNNER	NULL
+chill.stl	CHILL	ÆÕÍ¨»ÆÍ­.SFC.dat
