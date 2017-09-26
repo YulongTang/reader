@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="base\fileoperate.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="readers\gcreader.cpp">
+      <Filter>readers</Filter>
+    </ClCompile>
+    <ClCompile Include="readers\gyreader.cpp">
+      <Filter>readers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="tests\test_fileoperate.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_readers.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="base\fileoperate.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="readers\gcreader.h">
+      <Filter>readers</Filter>
+    </ClInclude>
+    <ClInclude Include="readers\gyreader.h">
+      <Filter>readers</Filter>
+    </ClInclude>
+    <ClInclude Include="base\yfmacro.h">
+      <Filter>base</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="base">
+      <UniqueIdentifier>{58d80557-13f8-40ee-b00b-526116b361d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="readers">
+      <UniqueIdentifier>{5bb97466-6fae-4192-b647-05bdb8c411f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests">
+      <UniqueIdentifier>{1e6a3e25-c6b7-4aed-a99d-afe72baf8db8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
