@@ -1,5 +1,5 @@
 GEOMETRY	TYPE	MATERIAL
-NULL		AIR	NULL
+NULL	AIR	NULL
 cast.stl	CAST	AISI1010.SZG.dat
 sandmold.stl	MOLD	Ê÷Ö¬É°£¨Öý¸Ö£©.SFC.dat
 feeder.stl	FEEDER	NULL

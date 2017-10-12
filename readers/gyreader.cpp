@@ -79,7 +79,7 @@ bool GYReader::read(string filepath)
 				{
 					if (description.size()>0)
 					{
-						description = description.substr(0, description.size()-2);
+						description = description.substr(0, description.size()-1);
 					}
 					break;
 				}

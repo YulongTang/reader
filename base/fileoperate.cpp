@@ -1,5 +1,7 @@
 #include "fileoperate.h"
-
+#include <fstream>
+#include <stdlib.h>
+using namespace YF;
 //去掉字符串中所有空白，如空格' '，制表'\t'。
 //返回新的字符串
 string YF::trimAllBlank(const string str)
@@ -177,4 +179,75 @@ string YF::getFileFolder(string filepath)
 	{
 		return filepath.substr(0,index_slash+1);
 	}
+}
+
+//读取txt文件中以单个制表符隔开的三列数据，例如1		2	3
+bool readText(string filepath, std::vector<string>&a, std::vector<string>&b, std::vector<string>&c)
+{
+	a.clear();
+	b.clear();
+	c.clear();
+	ifstream txt(filepath);
+	if (!txt)
+	{
+		return false;
+	}
+	char buffer[256];
+	txt.getline(buffer, 256);
+	string s ;
+	string savedata[3];
+	while (txt.getline(buffer, 256))
+	{
+		s = buffer;
+		s = trimComments(s);
+		int pos = 0;
+		for (int i = 0; i < 3; i++) 
+		{
+			int index = s.find('\t',pos);
+			savedata[i] = s.substr(pos,index-pos);
+			pos+=savedata[i].size()+1;
+		}
+		a.push_back(savedata[0]);
+		b.push_back(savedata[1]);
+		c.push_back(savedata[2]);	
+	}
+	txt.close();
+	return true;
+}
+
+//读取txt文件中以单个制表符隔开的四列数据，例如1		2	3	4
+bool readText(string filepath, std::vector<string>&a, std::vector<string>&b, std::vector<string>&c, std::vector<float>&d)
+{
+	a.clear();
+	b.clear();
+	c.clear();
+	d.clear();
+	ifstream txt(filepath);
+	if (!txt)
+	{
+		return false;
+	}
+	char buffer[256];
+	txt.getline(buffer, 256);
+	string s;
+	string savedata[4];
+	while (txt.getline(buffer, 256))
+	{
+		s = buffer;
+		s = trimComments(s);
+		int pos = 0;
+		for (int i = 0; i < 4; i++)
+		{
+			int index = s.find('\t', pos);
+			savedata[i] = s.substr(pos, index - pos);
+			pos += savedata[i].size() + 1;
+		}
+		a.push_back(savedata[0]);
+		b.push_back(savedata[1]);
+		c.push_back(savedata[2]);
+		float ss = atof(savedata[3].c_str());
+		d.push_back(ss);
+	}
+	txt.close();
+	return true;
 }

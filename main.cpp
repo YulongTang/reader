@@ -19,5 +19,8 @@ int main()
 
 	test_gcReader();
 	test_gyReader();
+	test_zpReader();
+	test_tlzpReader();
+
     return 0;
 }

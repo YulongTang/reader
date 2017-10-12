@@ -8,10 +8,10 @@
 using namespace std;
 using namespace YF;
 
-#define GY_KEY_PID                "PID"
+#define GY_KEY_PID        "PID"
 #define GY_KEY_DESINGER   "DESINGER"
-#define GY_KEY_ANALYZER  "ANALYZER"
-#define GY_KEY_TIME            "TIME"
+#define GY_KEY_ANALYZER   "ANALYZER"
+#define GY_KEY_TIME       "TIME"
 
 class GYReader
 {

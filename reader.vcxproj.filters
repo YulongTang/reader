@@ -11,6 +11,12 @@
     <ClCompile Include="readers\gyreader.cpp">
       <Filter>readers</Filter>
     </ClCompile>
+    <ClCompile Include="readers\zpreader.cpp">
+      <Filter>readers</Filter>
+    </ClCompile>
+    <ClCompile Include="readers\tlzpreader.cpp">
+      <Filter>readers</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tests\test_fileoperate.h">
@@ -30,6 +36,12 @@
     </ClInclude>
     <ClInclude Include="base\yfmacro.h">
       <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="readers\zpreader.h">
+      <Filter>readers</Filter>
+    </ClInclude>
+    <ClInclude Include="readers\tlzpreader.h">
+      <Filter>readers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

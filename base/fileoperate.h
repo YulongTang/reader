@@ -2,7 +2,12 @@
 #define FILEOPERATE_H
 
 #include <iostream>
+#include <vector>
 using namespace std;
+
+
+bool readText(string filepath,std::vector<string>&a,std::vector<string>&b,std::vector<string>&c);
+bool readText(string filepath,std::vector<string>&a,std::vector<string>&b,std::vector<string>&c,std::vector<float>&d);
 
 namespace YF {
 
