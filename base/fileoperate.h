@@ -30,9 +30,9 @@ namespace YF {
 	//返回新的字符串
 	string trimComments(const string str);
 
-	//用一个字符串剪切目标字符串
+	//用一个标识字符串剪切源字符串，如果存在多个标识字符串，则从第一个标识处剪切（从左至右）
 	//[in] source 源字符串
-	//[in] split  目标字符串
+	//[in] split  标识字符串
 	//[in] left   剪切后字符串左半部分
 	//[return]    剪切后字符串右半部分
 	string splitByString(const string source, const string split, string & left);

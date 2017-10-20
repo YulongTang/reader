@@ -1,6 +1,7 @@
 #include <iostream>
 #include "tests/test_fileoperate.h"
 #include "tests/test_readers.h"
+#include "tests/test_others.h"
 
 using namespace std;
 using namespace TEST;
@@ -21,6 +22,8 @@ int main()
 	test_gyReader();
 	test_zpReader();
 	test_tlzpReader();
+
+	test_table();
 
     return 0;
 }
