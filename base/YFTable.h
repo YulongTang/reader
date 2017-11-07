@@ -1,6 +1,7 @@
 #pragma once
 #include <vector>
 #include <string>
+#include <fstream>
 #include "./fileoperate.h"
 using namespace YF;
 using namespace std;
@@ -30,4 +31,6 @@ public:
 	*[return] true or false.
 	**/
 	bool writeTable(string filePath, string tableName);
+
+	void lineToCells(string line, vector<string> & cells);
 };

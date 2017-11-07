@@ -7,8 +7,9 @@ namespace TEST
 	{
 		YFTable table;
 		string filepath = "tests\\Demo\\π§“’1\\≥‰–Õ01\\run.cfg";
-		string outfile = "table.txt";
+		string outpath = "table.txt";
 		table.readTable(filepath, "**VALUE");
-		table.writeTable(outfile, "*TABLE");
+
+		table.writeTable(outpath, "*TABLE");
 	}
 }

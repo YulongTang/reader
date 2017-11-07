@@ -78,11 +78,13 @@ string YF::splitByString(const string source, const string split, string & left)
 {
 	if (split.size() == 0)
 	{
+		left = "";
 		return source;
 	}
 	int index = source.find(split);
 	if (index == string::npos)
 	{
+		left = "";
 		return source;
 	}
 	left = source.substr(0,index);
